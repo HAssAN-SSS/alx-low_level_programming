@@ -11,9 +11,14 @@ int main(void)
 {
 int i = 0;
 	char *string = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+	char *stringUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
 for (i = 0; i < 26; i++)
 {
 putchar(string[i]);
+}
+for (i = 0; i < 26; i++)
+{
+putchar(stringUp[i]);
 }
 putchar('\n');
 
