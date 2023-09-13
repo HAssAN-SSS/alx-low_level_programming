@@ -10,12 +10,13 @@
 int main(void)
 {
 	int n;
+	int lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 	/* Check if n is positive, zero, or negative */
-	int lastDigit = n;
+	lastDigit = n % 10;
 
 	if (lastDigit < 6 && lastDigit != 0)
 	{
