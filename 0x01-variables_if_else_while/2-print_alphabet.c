@@ -9,8 +9,9 @@
  */
 int main(void)
 {
+    int i = 0;
 	char *string = "abcdefghijklmnopqrstuvwxyz";
-    for (int i = 0; i < 26; i++)
+    for (i = 0; i < 26; i++)
     {
     putchar(string[i]);
     }
