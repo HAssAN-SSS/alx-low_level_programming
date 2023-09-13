@@ -21,7 +21,6 @@ putchar(string[i]);
 
 }
 
-putchar('\n');
 
 	return (0);
 }
