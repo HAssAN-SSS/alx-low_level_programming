@@ -10,7 +10,7 @@
 int main(void)
 {
 int i = 0;
-	char *string = "0123456789 ";
+	char *string = "0123456789";
 for (i = 0; i < 26; i++)
 {
 if (string[i] != 'q' && string[i] != 'e')
