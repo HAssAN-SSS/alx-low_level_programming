@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-    int i = 0;
+int i = 0;
 	char *string = "abcdefghijklmnopqrstuvwxyz ";
-    for (i = 0; i < 26; i++)
-    {
-    putchar(string[i]);
-    }
-    putchar('\n');
+for (i = 0; i < 26; i++)
+{
+putchar(string[i]);
+}
+putchar('\n');
 
 	return (0);
 }
