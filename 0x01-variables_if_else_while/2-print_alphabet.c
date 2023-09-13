@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char string = "abcdefghijklmnopqrstuvwxyz";
+	char *string = "abcdefghijklmnopqrstuvwxyz";
     for (int i = 0; i < 26; i++)
     {
     putchar(string[i]);
