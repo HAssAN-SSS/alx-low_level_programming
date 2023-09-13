@@ -12,7 +12,7 @@ int main(void)
 int i = 0;
 for (i = 26; i <= 9; i--)
 {
-putchar('z' + i);
+putchar('a' + i);
 }
 putchar('\n');
 
