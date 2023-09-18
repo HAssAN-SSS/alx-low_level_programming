@@ -1,6 +1,10 @@
 /*
 * reset_to_98 - check the code
-
+* reset_to_98
+* reset_to_98
+* reset_to_98
+* reset_to_98
+* reset_to_98
 * Return: Always 0.
 */
 
