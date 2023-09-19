@@ -19,14 +19,14 @@ while (*a != '\0')
 if (length >= n && i < n)
 {
 printf("%d", *a);
+}
+a++;
+i++;
 if (i != length)
 {
 printf(", ");
 
 }
-}
-a++;
-i++;
 }
 
 printf("\n");
