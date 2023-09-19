@@ -7,15 +7,20 @@
 void print_array(int *a, int n)
 {
 int length = 0;
+int i = 0;
+
+while (a[length] != '\0')
+{
+length++;
+}
 
 while (*a == '\0')
 {
-if (length >= n)
+if (length >= n && i <= n)
 {
 printf("%d", *a);
 }
 a++;
-length++;
 }
 
 printf("\n");
