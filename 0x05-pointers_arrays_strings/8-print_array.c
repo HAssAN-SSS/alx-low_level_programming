@@ -22,6 +22,7 @@ printf("%d", *a);
 printf(", ");
 }
 a++;
+i++;
 }
 
 printf("\n");
