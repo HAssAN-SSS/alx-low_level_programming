@@ -22,7 +22,7 @@ printf("%d", *a);
 }
 a++;
 i++;
-if (i != length)
+if (i != n)
 {
 printf(", ");
 
