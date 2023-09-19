@@ -19,10 +19,10 @@ while (*a != '\0')
 if (length >= n && i < n)
 {
 printf("%d", *a);
-if (i != length - 1)
+if (i != length)
 {
-
 printf(", ");
+
 }
 }
 a++;
