@@ -4,7 +4,13 @@
  */
 void print_rev(const char *str)
 {
-int length = strlen(str);
+int length = 0;
+
+
+while (str[length] != '\0')
+{
+length++;
+}
 
 
 for (int i = length - 1; i >= 0; i--)
