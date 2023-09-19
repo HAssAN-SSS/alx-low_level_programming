@@ -1,24 +1,22 @@
 #include <stdio.h>
 /**
-* print_array - Print a string in reverse followed by a newline.
-* @a: The input string to be printed in reverse.
-* @n: The input string to be printed in reverse.
-*/
-
+ * print_array - Print elements of an integer array from index n to the end.
+ * @a: The integer array to be printed.
+ * @n: The starting index.
+ */
 void print_array(int *a, int n)
 {
-int length = 0;
 int i;
 
-
-while (a[length] != '\0')
+for (i = n; a[i] != '\0'; i++)
 {
-length++;
+printf("%d", a[i]);
+
+if (a[i + 1] != '\0')
+{
+printf(", ");
+}
 }
 
-for (i = n; i <= length - 1; i++)
-{
-putchar(a[i]);
-}
-putchar('\n');
+printf("\n");
 }
