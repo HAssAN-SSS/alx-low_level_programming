@@ -5,22 +5,5 @@
  */
 void _puts(const char *str)
 {
-ssize_t count = 0;
-
-
-while (str[count] != '\0')
-{
-
-if (write(1, &str[count], 1) == -1)
-{
-return (-1);
-}
-count++;
-}
-
-if (write(1, "\n", 1) == -1)
-{
-return (-1);
-}
-return (count);
+puts(*str);
 }
