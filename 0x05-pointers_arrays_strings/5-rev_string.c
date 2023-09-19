@@ -15,10 +15,21 @@ length++;
 }
 
 
-for (i = length - 1; i >= 0; i--)
+int length = strlen(str);
+int start = 0;
+int end = length - 1;
+char temp:
+
+while (start < end)
 {
-fputc(str[i], stdout);
+temp = str[start];
+str[start] = str[end];
+str[end] = temp;
+
+start++;
+end--;
+}
 }
 
-}
+
 
