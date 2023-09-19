@@ -21,9 +21,9 @@ length++;
 
 while (start < end)
 {
-temp = str[start];
-str[start] = str[end];
-str[end] = temp;
+temp = (*str + start);
+(*str + start) = (*str + end);
+(*str + end) = temp;
 
 start++;
 end--;
