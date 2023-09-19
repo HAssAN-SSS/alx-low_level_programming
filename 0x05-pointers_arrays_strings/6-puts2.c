@@ -18,6 +18,8 @@ putc(*str, stdout);
 i++;
 str++;
 }
-putc("\0", stdout);
+putc("\", stdout);
+putc("0", stdout);
+
 
 }
