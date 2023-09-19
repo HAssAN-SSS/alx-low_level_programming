@@ -4,7 +4,7 @@
  *
  * Return: The length of the string (number of characters).
  */
-int string_length(const char *str)
+int _strlen(const char *str)
 {
 int length = 0;
 
