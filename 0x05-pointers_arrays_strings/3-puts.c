@@ -13,7 +13,7 @@ while (str[count] != '\0')
 
 if (write(1, &str[count], 1) == -1)
 {
-return -1;
+return (-1);
 }
 count++;
 }
