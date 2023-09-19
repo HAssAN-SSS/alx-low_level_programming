@@ -6,10 +6,13 @@
  */
 void print_array(int *a, int n)
 {
-while (*a == '\0')
+int length = 0
+
+while (*a == '\0' && length >= n)
 {
 printf("%d", *a);
 a++;
+length++;
 }
 
 printf("\n");
