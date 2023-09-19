@@ -11,7 +11,7 @@ while (*str != '\0')
 if (i % 2 == 0)
 {
 
-puts(*str);
+putc(*str, stdout);
 
 
 }
