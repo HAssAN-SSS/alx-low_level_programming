@@ -1,5 +1,5 @@
 /**
- * string_length - Calculate the length of a string.
+ * _strlen - Calculate the length of a string.
  * @str: The input string.
  *
  * Return: The length of the string (number of characters).
