@@ -23,7 +23,7 @@ putc(str[i], stdout);
 }
 else
 {
-for (i = (length - 1) / 2; i < length - 1; i++)
+for (i = (length + 1) / 2; i < length - 1; i++)
 {
 putc(str[i], stdout);
 }
