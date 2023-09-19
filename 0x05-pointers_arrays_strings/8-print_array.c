@@ -8,9 +8,12 @@ void print_array(int *a, int n)
 {
 int length = 0;
 
-while (*a == '\0' && length >= n)
+while (*a == '\0')
+{
+if (length >= n)
 {
 printf("%d", *a);
+}
 a++;
 length++;
 }
