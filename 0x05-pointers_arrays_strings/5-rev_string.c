@@ -3,7 +3,7 @@
 * rev_string - Print a string in reverse followed by a newline.
 * @str: The input string to be printed in reverse.
 */
-void rev_string(const char *str)
+void rev_string(char *str)
 {
 int length = 0;
 
