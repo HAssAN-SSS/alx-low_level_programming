@@ -11,7 +11,7 @@ while (str[i] != '\0')
 if (i % 2 == 0)
 {
 
-puts(str[i]);
+puts(*(stri + i));
 i++;
 
 
