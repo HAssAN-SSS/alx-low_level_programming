@@ -15,7 +15,6 @@ length++;
 }
 
 
-int length = strlen(str);
 int start = 0;
 int end = length - 1;
 char temp:
