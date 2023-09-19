@@ -14,7 +14,7 @@ while (a[length] != '\0')
 length++;
 }
 
-while (*a == '\0')
+while (*a != '\0')
 {
 if (length >= n && i <= n)
 {
