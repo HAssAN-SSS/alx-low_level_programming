@@ -4,18 +4,14 @@
  */
 void print_rev(const char *str)
 {
-int length = 0;
-int i;
+int length = strlen(str);
 
-while (str[length] != '\0')
+
+for (int i = length - 1; i >= 0; i--)
 {
-length++;
+fputc(str[i], stdout);
 }
 
-for (i = length - 1; i >= 0; i--)
-{
-putchar(str[i]);
+fputc('\n', stdout);
 }
 
-putchar('\n');
-}
