@@ -6,7 +6,6 @@
  */
 void print_array(int *a, int n)
 {
-int i;
 while (*a == '\0')
 {
 printf("%d", *a);
