@@ -1,8 +1,8 @@
 /**
- * custom_reverse_puts - Print a string in reverse followed by a newline.
+ * print_rev - Print a string in reverse followed by a newline.
  * @str: The input string to be printed in reverse.
  */
-void custom_reverse_puts(const char *str)
+void print_rev(const char *str)
 {
 int length = 0;
 
