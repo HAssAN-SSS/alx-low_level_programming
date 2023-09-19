@@ -7,15 +7,10 @@
 void print_array(int *a, int n)
 {
 int i;
-
-for (i = n; a[i] != '\0'; i++)
+while (*a == '\0')
 {
-printf("%d", a[i]);
-
-if (a[i + 1] != '\0')
-{
-printf(", ");
-}
+printf("%d", *a);
+a++;
 }
 
 printf("\n");
