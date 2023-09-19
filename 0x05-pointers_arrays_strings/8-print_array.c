@@ -19,7 +19,7 @@ while (*a != '\0')
 if (length >= n && i <= n)
 {
 printf("%d", *a);
-printf(", ")
+printf(", ");
 }
 a++;
 }
