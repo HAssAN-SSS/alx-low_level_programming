@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 int flag = 0;
 
-str[0] = str[0] - ('a' - 'A');
+
 
 while (*str != '\0')
 {
@@ -36,7 +36,6 @@ else
 flag = 0;
 }
 }
-
 
 return (*str);
 }
