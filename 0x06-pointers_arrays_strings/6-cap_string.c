@@ -9,8 +9,7 @@
 
 char *cap_string(char *str)
 {
-char *str;
-char stringo[] = "life is so, short";
+
 int flag = 0;
 
 str = stringo;
