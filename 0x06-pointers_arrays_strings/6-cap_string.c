@@ -41,5 +41,5 @@ flag = 0;
 }
 
 
-return (str);
+return (*str);
 }
