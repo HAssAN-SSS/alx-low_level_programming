@@ -14,6 +14,7 @@ char stringo[] = "life is so, short";
 int flag = 0;
 
 str = stringo;
+str[0] = str[0] - ('a' - 'A');
 
 while (*str != '\0')
 {
