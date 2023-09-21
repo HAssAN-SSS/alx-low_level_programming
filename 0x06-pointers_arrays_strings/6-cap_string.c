@@ -12,7 +12,6 @@ char *cap_string(char *str)
 
 int flag = 0;
 
-str = stringo;
 str[0] = str[0] - ('a' - 'A');
 
 while (*str != '\0')
@@ -24,7 +23,6 @@ flag = 1;
 }
 if (*str >= 'a' && *str <= 'z' && flag == 2)
 {
-            
 *str = *str - ('a' - 'A');
 flag = 0;
 }
