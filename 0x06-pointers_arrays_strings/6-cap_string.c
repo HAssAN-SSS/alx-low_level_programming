@@ -1,33 +1,41 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
-
 /**
- * cap_string - Capitalize the first letter of each word in a string.
- * @str: The input string.
- * Return: A pointer to the modified string.
+ * *cap_string - Compare two strings.
+ * @str:  is the number of elements of the array.
+ * @*:  is the number of elements of the array.
+ * Return: The difference between the two strings.
  */
+
 char *cap_string(char *str)
 {
-bool new_word = true;
+
+int flag = 0;
+
+
 
 while (*str != '\0')
 {
-if (*str >= 'a' && *str <= 'z')
+if (*str < '0')
 {
-if (new_word)
-{
-*str = *str - ('a' - 'A');
-new_word = false;
-}
-}
-else if (*str == ' ' || *str == '\t' || *str == '\n')
-{
-new_word = true;
+flag = 1;
 
+}
+if (*str >= 'a' && *str <= 'z' && flag == 2)
+{
+str[1] = str[1] - ('a' - 'A');
+flag = 0;
+}
 str++;
+if (flag == 1)
+{
+flag = 2;
+}
+else
+{
+flag = 0;
+}
 }
 
-return (str);
-}
+return (*str);
 }
