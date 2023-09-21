@@ -8,21 +8,17 @@
  */
 void reverse_array(int *a, int n)
 {
-int original_array[n];
-int revers_array[n];
 
+int temp;
 int i;
 
 for (i = 0; i < n; i++)
 {
-original_array[i] = a[i];
-revers_array[n - 1 - i] = original_array[i];
+temp = a[i];
+a[i] = a[n - i - 1];
+a[n - i - 1] = temp;
 }
 
-for (i = 0; i < n; i++)
-{
-a[i] = revers_array[i];
-}
 
 }
 
