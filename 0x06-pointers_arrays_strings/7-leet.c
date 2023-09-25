@@ -25,5 +25,5 @@ break;
 str++;
 }
 
-return (orig);
+return (*orig);
 }
