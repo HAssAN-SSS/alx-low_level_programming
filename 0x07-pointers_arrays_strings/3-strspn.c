@@ -8,10 +8,9 @@
  *
  * Return: number of bytes in the initial segment of s
  */
-
-int _strspn(char *s, char *accept)
+size_t _strspn(const char *s, const char *accept)
 {
-int *result;
+size_t result;
 result = strspn(s, accept);
 return (result);
 }
