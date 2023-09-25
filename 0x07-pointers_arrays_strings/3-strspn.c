@@ -9,7 +9,7 @@
  * Return: number of bytes in the initial segment of s
  */
 
-unsigned int _strspn(char *s, char *accept)
+int _strspn(char *s, char *accept)
 {
 int *result;
 result = strspn(s, accept);
