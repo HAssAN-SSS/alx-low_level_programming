@@ -12,5 +12,5 @@ if (*s == '\0')
 return;
 }
 _puts_recursion(s);
-*s--;
+*s++;
 }
