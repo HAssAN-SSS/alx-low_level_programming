@@ -15,7 +15,7 @@ int end;
 
 char temp;
 
-while (str[length] != '\0')
+while (s[length] != '\0')
 {
 length++;
 }
@@ -24,11 +24,12 @@ end = length - 1;
 
 while (start < end)
 {
-temp = str[start];
-str[start] = str[end];
-str[end] = temp;
+temp = s[start];
+s[start] = s[end];
+s[end] = temp;
 
 start++;
 end--;
 
+}
 }
