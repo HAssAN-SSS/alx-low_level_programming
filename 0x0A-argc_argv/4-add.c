@@ -28,7 +28,7 @@ int j = 0;
 
 for (i = 1; i < argc; i++)
 {
-if (atoi(argv[i]) == 0 || argc < 3)
+if (atoi(argv[i]) == 0 || argc < 2)
 {
 
 err = 1;
