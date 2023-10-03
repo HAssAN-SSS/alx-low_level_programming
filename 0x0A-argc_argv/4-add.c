@@ -31,7 +31,7 @@ if (atoi(argv[i]) == 0 || argc < 3)
 {
 
 err = 1;
-printf("Error\n");
+printf("Error\n\n");
 break;
 }
 }
@@ -44,7 +44,7 @@ for (j = 1; j < argc; j++)
 
 result += atoi(argv[j]);
 }
-printf("%d\n", result);
+printf("%d\n\n", result);
 }
 
 
