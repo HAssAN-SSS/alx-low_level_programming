@@ -28,7 +28,6 @@ for (i = 1; i < argc; i++)
 result = atoi(argv[i]);
 if (result == 0)
 {
-printf("Error\n");
 err = 1;
 break;
 }
