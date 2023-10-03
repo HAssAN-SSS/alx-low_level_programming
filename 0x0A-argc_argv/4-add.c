@@ -24,6 +24,12 @@ int err = 0;
 int result = 0;
 int i = 0;
 int j = 0;
+if (argc <= 1)
+{
+printf("0");
+}
+else
+{
 
 for (i = 1; i < argc; i++)
 {
@@ -33,6 +39,7 @@ if (atoi(argv[i]) == 0 || argc < 3)
 err = 1;
 printf("Error\n");
 break;
+}
 }
 }
 
