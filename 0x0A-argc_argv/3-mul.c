@@ -37,5 +37,5 @@ fprintf(stderr, "Error\n");
 err = 1;
 }
 
-return (0);
+return (err);
 }
