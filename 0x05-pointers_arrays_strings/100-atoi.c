@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "../0x09-static_libraries/main.h"
+
 
 /**
  * _atoi - Convert a string to an integer.

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include "../0x09-static_libraries/main.h"
+
 /**
  * _memset - fills memory with a constant byte
  * @s: pointer to memory area to be filled

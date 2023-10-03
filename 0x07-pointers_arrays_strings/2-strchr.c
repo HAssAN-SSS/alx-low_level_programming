@@ -1,5 +1,7 @@
 #include <string.h>
 #include <stdio.h>
+#include "../0x09-static_libraries/main.h"
+
 
 /**
  * _strchr - locate character in string

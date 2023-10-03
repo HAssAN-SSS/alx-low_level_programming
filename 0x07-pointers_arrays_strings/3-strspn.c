@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include "../0x09-static_libraries/main.h"
+
 
 /**
  * _strspn - gets the length of a prefix substring
@@ -8,7 +10,7 @@
  *
  * Return: number of bytes in the initial segment of s
  */
-size_t _strspn(const char *s, const char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 size_t result;
 result = strspn(s, accept);

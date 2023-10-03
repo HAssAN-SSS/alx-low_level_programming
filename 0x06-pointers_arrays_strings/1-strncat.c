@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include "../0x09-static_libraries/main.h"
+
 /**
  * _strncat - Concatenates two strings.
  * @dest: The string to be appended to.

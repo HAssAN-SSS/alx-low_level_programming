@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include "../0x09-static_libraries/main.h"
+
 /**
  * _strncpy - Copy a string from source to destination.
  * @dest: The destination buffer.

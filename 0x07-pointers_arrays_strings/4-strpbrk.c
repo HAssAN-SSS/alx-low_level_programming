@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include "../0x09-static_libraries/main.h"
+
 
 /**
  * _strpbrk - gets the length of a prefix substring
