@@ -18,6 +18,7 @@
 
 int main(int argc, char **argv)
 {
+int err = 0;
 int result;
 int i = 0;
 if (argc >= 3)
@@ -28,13 +29,13 @@ for (i = 2; i < argc; i++)
 result *= atoi(argv[i]);
 }
 printf("%d\n", result);
-return (0);
 
 }
 else
 {
 fprintf(stderr, "Error\n");
-return (1);
+err = 1;
 }
 
+return (0);
 }
