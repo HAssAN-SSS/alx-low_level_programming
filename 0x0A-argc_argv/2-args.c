@@ -10,9 +10,9 @@
 int main(int argc, char **argv)
 {
 int lenght = argc;
-while (lenght--)
+for (lenght = 0; argv[lenght] != NULL; lenght++)
 {
-printf("%d\n", *argv[argc - lenght - 1]);
+printf("%s\n", argv[lenght]);
 
 
 }
