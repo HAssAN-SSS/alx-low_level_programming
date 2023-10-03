@@ -24,12 +24,7 @@ int err = 0;
 int result = 0;
 int i = 0;
 int j = 0;
-if (argc <= 1)
-{
-printf("0\n");
-}
-else
-{
+
 
 for (i = 1; i < argc; i++)
 {
@@ -41,7 +36,7 @@ printf("Error\n");
 break;
 }
 }
-}
+
 
 
 if (err == 0)
