@@ -21,32 +21,33 @@
 int main(int argc, char **argv)
 {
 int err = 0;
-int result;
+int result = 0;
 int i = 0;
+int j = 0;
+
 for (i = 1; i < argc; i++)
 {
-result = atoi(argv[i]);
-if (result == 0)
+if (atoi(argv[i]) == 0 || argc < 3)
 {
+
 err = 1;
+printf("Error\n");
 break;
 }
 }
-if (argc >= 3 && err == 0)
+
+
+if (err == 0)
 {
-result = atoi(argv[1]);
-for (i = 2; i < argc; i++)
+for (j = 1; j < argc; j++)
 {
-result += atoi(argv[i]);
+
+result += atoi(argv[j]);
 }
 printf("%d\n", result);
+}
 
-}
-else
-{
-printf("Error\n");
-err = 1;
-}
+
 
 return (err);
 }
