@@ -36,7 +36,8 @@ if (err != 1)
 {
 if (atoi(argv[1]) < 0)
 {
-printf("0\n");
+printf("0");
+printf("\n");
 }
 else
 {
@@ -56,7 +57,8 @@ else
 monidaCount++;
 if (alternativ == atoi(argv[1]))
 {
-printf("%d\n", monidaCount);
+printf("%d", monidaCount);
+printf("\n");
 }
     
 }

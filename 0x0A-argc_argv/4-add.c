@@ -20,15 +20,16 @@
 
 int main(int argc, char **argv)
 {
+char *endptr;
 int err = 0;
 int result = 0;
 int i = 0;
 int j = 0;
 
-
 for (i = 1; i < argc; i++)
 {
-if (atoi(argv[i]) == 0 || argc < 2)
+strtol(argv[i], &endptr, 10);
+if (*endptr != '\0' || argc < 2)
 {
 
 err = 1;
