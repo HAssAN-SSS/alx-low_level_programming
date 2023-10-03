@@ -29,13 +29,11 @@ for (i = 2; i < argc; i++)
 result *= atoi(argv[i]);
 }
 printf("%d\n", result);
-printf("\n");
 
 }
 else
 {
-fprintf(stderr, "Error\n");
-printf("\n");
+printf("Error\n");
 err = 1;
 }
 
