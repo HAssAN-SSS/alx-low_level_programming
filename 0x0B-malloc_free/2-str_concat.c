@@ -5,6 +5,7 @@
  * str_concat - Concatenates two strings.
  * @s1: The first string to be concatenated.
  * @s2: The second string to be concatenated.
+ * @ptr: The pointer to the resulting string.
  * Return: A pointer to the resulting string.
 */
 char *sconcati(const char *s1, const char *s2, char *ptr);
