@@ -7,6 +7,7 @@
  * @s2: The second string to be concatenated.
  * Return: A pointer to the resulting string.
 */
+char *sconcati(const char *s1, const char *s2, char *ptr);
 char *str_concat(char *s1, char *s2)
 {
 int i;
