@@ -27,13 +27,21 @@ return (NULL);
 }
 else
 {
+if (s1 != NULL)
+{
 for (i = 0; s1[i] != '\0'; i++)
 {
 ptr[i] = s1[i];
 }
+
+}
+if (s2 != NULL)
+{
 for (i = 0; s2[i] != '\0'; i++)
 {
 ptr[i + strlen(s1)] = s2[i];
+}
+
 }
 if (ptr == NULL)
 {
