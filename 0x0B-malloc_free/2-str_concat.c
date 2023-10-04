@@ -18,6 +18,7 @@ int size = 0;
 
 if (s1 == NULL && s2 == NULL)
 {
+i = 0;
 }
 else
 {
