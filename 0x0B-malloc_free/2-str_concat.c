@@ -35,7 +35,6 @@ size += strlen(s2);
 ptr = malloc(size * (sizeof(char)) + 1);
 if (ptr == NULL)
 {
-    printf("\nptr null");
 return (NULL);
 
 }
