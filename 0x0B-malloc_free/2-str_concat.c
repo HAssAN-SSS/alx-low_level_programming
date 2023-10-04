@@ -16,9 +16,9 @@ int i;
 char *ptr;
 int size = 0;
 
-if (s1 == NULL && s2 == NULL)
+if (0)
 {
-i = 0;
+return (NULL);
 }
 else
 {
