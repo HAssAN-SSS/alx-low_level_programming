@@ -21,6 +21,20 @@ if (s2 != NULL)
 size += strlen(s2);
 }
 ptr = malloc(size * (sizeof(char)) + 1);
+return (sconcati(s1, s2, ptr));
+
+}
+
+
+/**
+ * sconcati - Concatenates two strings.
+ * @s1: The first string to be concatenated.
+ * @s2: The second string to be concatenated.
+ * @ptr: The pointer to the resulting string.
+ * Return: A pointer to the resulting string.
+*/
+char *sconcati(const char *s1, const char *s2, char *ptr)
+{
 if (ptr == NULL)
 {
 return (NULL);
