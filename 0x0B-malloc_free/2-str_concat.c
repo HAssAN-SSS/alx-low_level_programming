@@ -10,7 +10,6 @@
 char *sconcati(const char *s1, const char *s2, char *ptr);
 char *str_concat(char *s1, char *s2)
 {
-int i;
 char *ptr;
 int size = 0;
 if (s1 != NULL)
@@ -36,6 +35,7 @@ return (sconcati(s1, s2, ptr));
 */
 char *sconcati(const char *s1, const char *s2, char *ptr)
 {
+int i;
 if (ptr == NULL)
 {
 return (NULL);
