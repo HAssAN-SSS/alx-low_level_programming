@@ -1,3 +1,7 @@
+
+
+
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -11,41 +15,38 @@
 
 char *argstostr(int ac, char **av)
 {
-int i, j;
-char **str;
-if (ac == 0 || av == NULL)
+char stringo[] = "hello";
+char *s;
+char *plswork;
+int i;
+int k = 0;
+int llav = 0;
+s = &stringo[0];
+while (k < ac)
 {
-return (NULL);
-}
-else
+for (i = 0; av[k][i] != 0; i++)
 {
-str = malloc(ac * sizeof(char *));
-if (str == NULL)
+llav++;
+}
+k++;
+}
+llav += k;
+s = malloc((llav + 1) * sizeof(char));
+plswork = s;
+k = 1;
+while (k < ac)
 {
-return (NULL);
-}
-else
+for (i = 0; av[k][i] != 0; i++)
 {
-for (i = 0; i < ac; i++)
-{
-str[i] = malloc(strlen(av[i]) * sizeof(char));
-if (str[i] == NULL)
-{
-for (j = 0; j < i; j++)
-{
-free(str[j]);
+*s = (char)av[k][i];
+s++;
 }
-free(str);
-return (NULL);
+*s = '\n';
+s++;
+k++;
 }
-for (j = 0; av[i][j] != '\0'; j++)
-{
-str[i][j] = av[i][j];
+*s = '\0';
+s++;
+*s = '\n';
+return (plswork);
 }
-}
-}
-}
-return (str);
-}
-
-
