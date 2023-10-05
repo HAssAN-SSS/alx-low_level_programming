@@ -37,7 +37,7 @@ int i, j, k;
 char **father;
 int sizeCount = 0;
 int wordcount = wordCount(str);
-if (str == NULL || str == '')
+if (str == NULL || *str == '')
 {
 return (NULL);
 }
