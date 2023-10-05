@@ -29,7 +29,7 @@ else
 while (alternativ < atoi(argv[1]))
 {
 alternativ += array[monidaIndex];
-if (alternativ > atoi(argv[1]))
+if (alternativ > atoll(argv[1]))
 {
 alternativ -= array[monidaIndex];
 monidaIndex++;
