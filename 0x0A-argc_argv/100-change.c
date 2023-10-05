@@ -18,7 +18,7 @@ if (argc != 2 || atoi(argv[1]) > 837645)
 printf("Error\n");
 err = 1;
 }
-if (err != 1)
+else
 {
 if (atoi(argv[1]) <= 0)
 {
