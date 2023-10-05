@@ -72,7 +72,7 @@ father[i][j] = '\0';
 
 str += sizeCount;
 
-while (*str == ' ')
+while (*str == ' ' && *str != '\0')
 {
 str++;
 }
