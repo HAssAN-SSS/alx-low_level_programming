@@ -13,7 +13,7 @@ int alternativ = 0;
 int monidaCount = 0;
 int monidaIndex = 0;
 int array[5] = {25, 10, 5, 2, 1};
-if (argc != 2)
+if (argc != 2 || atoi(argv[1]) >= 2147483647)
 {
 printf("Error\n");
 err = 1;
