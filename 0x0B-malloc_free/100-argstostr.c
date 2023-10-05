@@ -22,6 +22,12 @@ int i;
 int k = 0;
 int llav = 0;
 s = &stringo[0];
+if (ac == 0 || av == NULL)
+{
+return (NULL);
+}
+else
+{
 while (k < ac)
 {
 for (i = 0; av[k][i] != 0; i++)
@@ -47,6 +53,6 @@ k++;
 }
 *s = '\0';
 s++;
-*s = '\n';
+}
 return (plswork);
 }
