@@ -33,7 +33,7 @@ k++;
 llav += k;
 s = malloc((llav + 1) * sizeof(char));
 plswork = s;
-k = 1;
+k = 0;
 while (k < ac)
 {
 for (i = 0; av[k][i] != 0; i++)
