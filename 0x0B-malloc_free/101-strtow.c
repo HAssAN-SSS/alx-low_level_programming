@@ -22,7 +22,6 @@ if (str[i] == ' ')
 count++;
 }
 }
-
 return (count + 1);
 }
 
@@ -37,11 +36,11 @@ int i, j, k;
 char **father;
 int sizeCount = 0;
 int wordcount = wordCount(str);
+
 if (str == NULL || *str == '\0')
 {
 return (NULL);
 }
-
 father = malloc((wordcount + 1) * sizeof(char *));
 if (father == NULL)
 {
@@ -66,17 +65,12 @@ free(father[k]);
 free(father);
 return (NULL);
 }
-
 for (j = 0; j < sizeCount; j++)
 {
 father[i][j] = str[j];
 }
-
 father[i][j] = '\0';
-
 str += sizeCount;
-sizeCount = 0;
-
 while (*str == ' ' && *str != '\0')
 {
 str++;
@@ -84,8 +78,5 @@ str++;
 }
 father[wordcount] = NULL;
 }
-
 return (father);
 }
-
-
