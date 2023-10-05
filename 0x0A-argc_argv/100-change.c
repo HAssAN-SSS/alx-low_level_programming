@@ -39,8 +39,7 @@ else
 monidaCount++;
 if (alternativ == atoi(argv[1]))
 {
-printf("%d", monidaCount);
-printf("\n");
+printf("%d\n", monidaCount);
 }
 }
 }
