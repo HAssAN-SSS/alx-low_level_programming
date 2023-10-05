@@ -75,6 +75,7 @@ father[i][j] = str[j];
 father[i][j] = '\0';
 
 str += sizeCount;
+sizeCount = 0;
 
 while (*str == ' ' && *str != '\0')
 {
