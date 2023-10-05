@@ -22,7 +22,7 @@ if (err != 1)
 {
 if (atoi(argv[1]) <= 0)
 {
-return ("0\n");
+printf("0\n");
 }
 else
 {
