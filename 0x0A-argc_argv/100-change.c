@@ -13,14 +13,14 @@ int alternativ = 0;
 int monidaCount = 0;
 int monidaIndex = 0;
 int array[5] = {25, 10, 5, 2, 1};
-if (argc != 2 || atoi(argv[1]) >= 2147483646)
+if (argc != 2)
 {
 printf("Error\n");
 err = 1;
 }
 if (err != 1)
 {
-if (atoi(argv[1]) <= 0)
+if (atoi(argv[1]) <= 0 || atoi(argv[1]) > 837645)
 {
 printf("0\n");
 }
