@@ -20,7 +20,7 @@ err = 1;
 }
 else
 {
-if (atoi(argv[1]) <= 0)
+if (atoi(argv[1]) <= 0 || atoi(argv[1]) > 837645)
 {
 printf("0\n");
 }
