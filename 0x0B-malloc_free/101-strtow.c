@@ -37,7 +37,10 @@ int i, j, k;
 char **father;
 int sizeCount = 0;
 int wordcount = wordCount(str);
-
+if (str == NULL || str == '')
+{
+return (NULL);
+}
 
 father = malloc((wordcount + 1) * sizeof(char *));
 if (father == NULL)
