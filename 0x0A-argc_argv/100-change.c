@@ -8,31 +8,42 @@
 */
 int main(int argc, char **argv)
 {
-int amount;
-int coins;
-int count;
+int err = 0;
+int alternativ = 0;
+int monidaCount = 0;
+int monidaIndex = 0;
+int array[5] = {25, 10, 5, 2, 1};
 if (argc != 2)
 {
 printf("Error\n");
-return (1);
+err = 1;
 }
-amount = atoi(argv[1]);
-if (amount < 0)
+else
+{
+if (atoi(argv[1]) <= 0 || atoi(argv[1]) > 837645)
 {
 printf("0\n");
 }
 else
 {
-coins[] = {25, 10, 5, 2, 1};
-count = 0;
-for (int i = 0; amount > 0 && i < 5; i++)
+while (alternativ < atoi(argv[1]))
 {
-count += amount / coins[i];
-amount %= coins[i];
+alternativ += array[monidaIndex];
+if (alternativ > atoll(argv[1]))
+{
+alternativ -= array[monidaIndex];
+monidaIndex++;
 }
-
-printf("%d\n", count);
+else
+{
+monidaCount++;
+if (alternativ == atoi(argv[1]))
+{
+printf("%d\n", monidaCount);
 }
-
-return (0);
+}
+}
+}
+}
+return (err);
 }
