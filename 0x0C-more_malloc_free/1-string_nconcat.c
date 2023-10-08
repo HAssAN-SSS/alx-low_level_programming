@@ -14,20 +14,48 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *str;
-unsigned int s1_len = (s1 != NULL) ? strlen(s1) : 0;
-unsigned int s2_len = (s2 != NULL) ? strlen(s2) : 0;
-unsigned int total_len = s1_len + ((n < s2_len) ? n : s2_len);
 
-str = malloc(total_len + 1);
 
-if (str == NULL)
-return (NULL);
+str = malloc(strlen(s1) + n + 1);
 if (s1 != NULL)
-str = strcat(str, s1);
-if (n < s2_len && s2 != NULL)
-str = strncat(str, s2, n);
-else if (s2 != NULL)
-str = strcat(str, s2);
+{
 
+addtoStr(str, s1, strlen(s1), 0);
+if (s2 != NULL)
+{
+addtoStr(str, s2, n, strlen(s1));
+
+}
+
+}
+else
+{
+if (s2 != NULL)
+{
+addtoStr(str, s2, n, 0);
+
+}
+
+}
 return (str);
+}
+
+/**
+ * addtoStr - Concatenates two strings.
+ * @s: The first string to be concatenated.
+ * @chunk: The second string to be concatenated.
+ * @n: The number of bytes to be concatenated.
+ * @start: khsfgfjsdfsdf dfkjh.
+ * Return: A pointer to the resulting string.
+*/
+void addtoStr(char *chunk, char *s, unsigned int n, int start);
+
+void addtoStr(char *chunk, char *s, unsigned int n, int start)
+{
+int i = 0;
+for (i = 0; i < n; i++)
+{
+chunk[start + i] = s[i];
+
+}
 }
