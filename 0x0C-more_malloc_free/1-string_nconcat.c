@@ -38,6 +38,8 @@ addtoStr(str, s2, n, 0);
 }
 
 }
+srt++;
+*str = '\0';
 return (str);
 }
 
