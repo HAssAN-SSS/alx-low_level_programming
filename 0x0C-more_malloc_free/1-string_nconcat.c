@@ -10,6 +10,7 @@
  * Return: A pointer to the resulting string.
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n);
+void addtoStr(char *chunk, char *s, unsigned int n, int start);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -48,14 +49,29 @@ return (str);
  * @start: khsfgfjsdfsdf dfkjh.
  * Return: A pointer to the resulting string.
 */
-void addtoStr(char *chunk, char *s, unsigned int n, int start);
 
 void addtoStr(char *chunk, char *s, unsigned int n, int start)
 {
-int i = 0;
+unsigned int i = 0;
 for (i = 0; i < n; i++)
 {
 chunk[start + i] = s[i];
 
 }
 }
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+char *concat;
+
+concat = string_nconcat("Best ", "School !!!", 6);
+printf("%s\n", concat);
+free(concat);
+return (0);
+}
+
