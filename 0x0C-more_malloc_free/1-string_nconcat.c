@@ -24,7 +24,15 @@ if (s1 != NULL)
 addtoStr(str, s1, strlen(s1), 0);
 if (s2 != NULL)
 {
+if (strlen(s2) >= n)
+{
 addtoStr(str, s2, n, strlen(s1));
+
+}
+else
+{
+addtoStr(str, s2, strlen(s2), strlen(s1));
+}
 
 }
 
@@ -33,13 +41,20 @@ else
 {
 if (s2 != NULL)
 {
+if (strlen(s2) >= n)
+{
 addtoStr(str, s2, n, 0);
 
 }
+else
+{
+addtoStr(str, s2, strlen(s2), 0);
+}
 
 }
-srt++;
-*str = '\0';
+
+}
+
 return (str);
 }
 
