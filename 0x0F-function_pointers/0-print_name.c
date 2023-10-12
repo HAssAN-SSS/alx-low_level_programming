@@ -9,6 +9,10 @@
 void print_name(char *name, void (*f)(char *))
 {
 void (*printo)(char *);
+if (f != NULL)
+{
+
 printo = f;
 printo(name);
+}
 }
