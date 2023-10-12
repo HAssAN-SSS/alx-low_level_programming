@@ -11,7 +11,7 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i = 0;
-int work = 0
+int work = 0;
 if (size <= 0)
 {
 return (-1);
@@ -27,9 +27,8 @@ work = 1;
 }
 }
 }
-if (work == 0)
-{
+
 return (-1);
-}
+
 
 }
