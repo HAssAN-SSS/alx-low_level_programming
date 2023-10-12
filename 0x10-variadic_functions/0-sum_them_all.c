@@ -20,6 +20,7 @@ return (0);
 }
 else
 {
+va_start(args, n);
 while (i < n)
 {
 sum += va_arg(args, int);
