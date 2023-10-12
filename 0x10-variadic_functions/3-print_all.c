@@ -1,4 +1,3 @@
-#include "variadic_functions.h"
 /**
  * print_all - print all
  * @format: format
@@ -7,41 +6,56 @@
 */
 void print_all(const char * const format, ...)
 {
+int n = strlen(format);
+int i = 0;
+char *str = NULL;
 va_list args;
 va_start(args, format);
-unsigned int n = strlen(format);
-unsigned int i = 0;
-char *str = NULL;
 while (i < n)
 {
 switch (format[i])
 {
 case 'c':
-printf("%c", va_arg(args, char));
+printf("%c", va_arg(args, int));
+printSpace(i, n);
 break;
 case 'i':
 printf("%d", va_arg(args, int));
+printSpace(i, n);
 break;
 case 'f':
-printf("%d", va_arg(args, float));
+printf("%f", va_arg(args, double));
+printSpace(i, n);
 break;
 case 's':
 str = va_arg(args, char *);
 if (str == NULL)
 {
-printf("(nil)");
+printf("limon");
 break;
 }
-printf("%s", va_arg(args, char *));
+printf("%s", str);
+printSpace(i, n);
 break;
 default:
 break;
 }
 i++;
-if (i != n)
+
+}
+printf("\n");
+}
+
+/**
+ * printSpace - in mylif
+ * @i: index
+ * @n: format long
+*/
+
+void printSpace(int i, int n)
+{
+if (i < n - 1)
 {
 printf(", ");
 }
-}
-printf("\n");
 }
